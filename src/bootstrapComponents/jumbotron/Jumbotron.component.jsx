@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
-import { Jumbotron, Row, Col, Container } from 'react-bootstrap';
+
+import CogopLogo from '../../assets/images/cogop-logo.jpg'; 
+import { Jumbotron, Row, Col, Container, Image } from 'react-bootstrap';
+import './jumbotron.styles.css';
 
 export class JumbotronComponent extends Component {
   render() {
@@ -8,13 +11,18 @@ export class JumbotronComponent extends Component {
         <Jumbotron>
             <Container>
                 <Row className="justify-content-md-center">
-                    <Col xs lg="2">
+                    <Col xs md="auto">
                         <p>WELCOME TO</p>
                     </Col>
                 </Row>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
-                        <h1>COGOP SF Valley</h1>
+                        <Image src={CogopLogo}  className="cogop-logo" roundedCircle />
+                    </Col>
+                </Row>
+                <Row className="justify-content-md-center">
+                    <Col md="auto">
+                        <h1>San Fernando Valley</h1>
                     </Col>
                 </Row>
             </Container>

@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 
-import {Navbar, NavbarBrand, Nav, NavDropdown} from 'react-bootstrap';
+import {Navbar, NavbarBrand, Nav, NavDropdown, Image } from 'react-bootstrap';
 import NavbarToggle from 'react-bootstrap/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
+
+import cogopLogo from '../../assets/images/cogop-logo.jpg'
 
 export class NavbarComponent extends Component {
     render() {
       return (
         <div>
-          <Navbar bg='light' expand='lg'>
+          <Navbar className="navbar navbar-expand-lg navbar-light bg-light">
             <NavbarBrand href="#cogop-sf-valley">
-                <span>COGOP</span>
-                <span> SF Valley</span>
+                <Image 
+                  src={cogopLogo}
+                  width="20"
+                  height="20"
+                  className="d-inline-block align-top"
+                  roundedCircle  
+                /> San Fernando Valley
             </NavbarBrand>
             <NavbarToggle aria-controls="basic-navbar-nav" />
             <NavbarCollapse id="basic-navbar-nav"/>
