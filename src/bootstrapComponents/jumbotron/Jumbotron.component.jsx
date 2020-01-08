@@ -22,7 +22,8 @@ export class JumbotronComponent extends Component {
                 </Row>
                 <Row className="justify-content-md-center">
                     <Col md="auto">
-                        <h1>San Fernando Valley</h1>
+                      <br />
+                      <h1>San Fernando Valley</h1>
                     </Col>
                 </Row>
             </Container>
